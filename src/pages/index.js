@@ -104,46 +104,52 @@ export default function Home() {
             onChange={(e) => setDiskRequests(e.target.value)}
             required
           />
-          <div className="flex flex-row items-center justify-around">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Button
               type="submit"
               color="blue"
-              onClick={() => setAlgorithm('fifo')}
+              className="col-span-1"
+              onClick={() => setAlgorithm("fifo")}
             >
               FIFO
             </Button>
             <Button
               type="submit"
               color="blue"
-              onClick={() => setAlgorithm('sstf')}
+              className="col-span-1"
+              onClick={() => setAlgorithm("sstf")}
             >
               SSTF
             </Button>
             <Button
               type="submit"
               color="blue"
-              onClick={() => setAlgorithm('scan')}
+              className="col-span-1"
+              onClick={() => setAlgorithm("scan")}
             >
               SCAN
             </Button>
             <Button
               type="submit"
               color="blue"
-              onClick={() => setAlgorithm('cscan')}
+              className="col-span-1"
+              onClick={() => setAlgorithm("cscan")}
             >
               C-SCAN
             </Button>
             <Button
               type="submit"
               color="blue"
-              onClick={() => setAlgorithm('look')}
+              className="col-span-1"
+              onClick={() => setAlgorithm("look")}
             >
               LOOK
             </Button>
             <Button
               type="submit"
               color="blue"
-              onClick={() => setAlgorithm('clook')}
+              className="col-span-1"
+              onClick={() => setAlgorithm("clook")}
             >
               CLOOK
             </Button>
