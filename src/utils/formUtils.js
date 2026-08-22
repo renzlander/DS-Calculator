@@ -26,38 +26,43 @@ const renderLineGraph = (
             label: "Requests",
             data: requests,
             pointRadius: 5,
-            backgroundColor: "rgb(240, 248, 255)",
-            borderColor: "rgb(52, 152, 219)",
+            pointBackgroundColor: "rgb(129, 140, 248)",
+            pointBorderColor: "rgb(224, 231, 255)",
+            backgroundColor: "rgba(34, 211, 238, 0.15)",
+            borderColor: "rgb(34, 211, 238)",
             borderWidth: 3,
-            fill: false,
+            fill: true,
+            tension: 0.15,
           },
         ],
       },
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
         legend: {
           labels: {
-            color: "rgb(52, 152, 219)",
+            color: "rgb(203, 213, 225)",
           },
         },
         scales: {
           y: {
             grid: {
-              color: "rgb(52, 152, 219)",
+              color: "rgba(99, 102, 241, 0.15)",
             },
             beginAtZero: true,
             min: startTrack,
             max: cylinderList,
             ticks: {
-              color: "rgb(52, 152, 219)",
+              color: "rgb(203, 213, 225)",
             },
           },
           x: {
             grid: {
-              color: "rgb(52, 152, 219)",
+              color: "rgba(99, 102, 241, 0.15)",
             },
             beginAtZero: true,
             ticks: {
-              color: "rgb(52, 152, 219)",
+              color: "rgb(203, 213, 225)",
             },
           },
         },

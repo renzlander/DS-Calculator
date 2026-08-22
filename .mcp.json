@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "next-devtools": {
+      "command": "npx",
+      "args": ["-y", "next-devtools-mcp@latest"]
+    },
+
+    "chartjs-server": {
+      "command": "npx",
+      "args": ["-y", "@ax-crew/chartjs-mcp-server"]
+    },
+
+    "flowbite": {
+      "command": "npx",
+      "args": ["-y", "flowbite-mcp"],
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "YOUR_PERSONAL_FIGMA_ACCESS_TOKEN"
+      }
+    }
+  }
+}
