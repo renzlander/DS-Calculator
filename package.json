@@ -21,6 +21,9 @@
     "react-dom": "19.2.8",
     "tailwindcss": "4.3.3"
   },
+  "overrides": {
+    "nanoid": "5.1.16"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3"
   }
